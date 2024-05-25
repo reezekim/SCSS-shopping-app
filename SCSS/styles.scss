@@ -1,9 +1,12 @@
 @import 'abstracts/variables'; // 변수
+@import 'abstracts/function'; // 함수
 @import 'abstracts/mixins'; // 믹스인
 
 @import 'base/reset'; // 리셋, 노멀라이즈css
 @import 'base/typography'; // 폰트정의
 
+@import 'component/button'; // 버튼
 
+@import 'layout/align'; // 정렬
 @import 'layout/header'; // 헤더
 @import 'layout/footer'; // 푸터
