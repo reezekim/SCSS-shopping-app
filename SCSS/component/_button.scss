@@ -1,0 +1,33 @@
+.btn {
+  &-prev {
+    background: url('/images/btn_prev.svg') no-repeat center / rem(24) auto;
+    height: rem(40);
+    width: rem(40);
+  }
+
+  &-menu {
+    background: url('/images/btn_menu.svg') no-repeat center / rem(24) auto;
+    height: rem(40);
+    width: rem(40);
+  }
+
+  &-cart {
+    background: url('/images/btn_cart.svg') no-repeat center / rem(24) auto;
+    height: rem(40);
+    position: relative;
+    width: rem(40);
+
+    span {
+      @include position(right, rem(1), top, rem(4));
+      background-color: $red;
+      border-radius: rem(16);
+      color: $white;
+      font-size: rem(11);
+      font-weight: 500;
+      height: rem(16);
+      line-height: rem(16);
+      padding: 0 rem(6);
+    }
+  }
+
+}
