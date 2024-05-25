@@ -1,0 +1,10 @@
+.header {
+  align-items: center;
+  display: flex;
+  height: rem(48);
+  position: relative;
+
+  .h1 {
+    @include position(left, 50%, top, 50%)
+  }
+}
