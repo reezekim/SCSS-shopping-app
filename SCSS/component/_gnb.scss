@@ -1,0 +1,36 @@
+.gnb {
+  box-shadow: 0 rem(-4) rem(4) rgba($grey06, .04);
+
+  ul {
+    display: flex;
+  }
+
+  li {
+    flex: 1;
+  }
+
+  a {
+    color: $grey83;
+    display: block;
+    font-size: rem(11);
+    font-weight: 500;
+    line-height: rem(16);
+    padding: rem(35) 0 rem(6); // 아이콘을 배경으로 넣어주기 위해서 글씨 위 패딩값을 35만큼 준것이다.
+    text-align: center;
+  }
+
+  @for $i from 1 to 6 {
+    .ico#{$i} {
+      background: url('../images/ico_gnb_off_#{$i}.svg') no-repeat center rem(8);
+
+      &:hover {
+        background: url('../images/ico_gnb_on_#{$i}.svg') no-repeat center rem(8);
+
+        a {
+          color: $black;
+        }
+      }
+    }
+  }
+
+}
