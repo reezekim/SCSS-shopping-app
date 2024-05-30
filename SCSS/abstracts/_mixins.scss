@@ -12,3 +12,8 @@
   }
 }
 
+// 배경 이미지
+@mixin bg($imgfile, $x:null, $y:null, $bgcolor:null, $width:null, $height:null) {
+  background: url(#{$imgurl}#{$imgfile}) no-repeat $x $y $bgcolor;
+  background-size: $width $height;
+}

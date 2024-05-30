@@ -1,18 +1,18 @@
 .btn {
   &-prev {
-    background: url('/images/btn_prev.svg') no-repeat center / rem(24) auto;
+    @include bg('btn_prev.svg', center, null, null, rem(24), auto);
     height: rem(40);
     width: rem(40);
   }
 
   &-menu {
-    background: url('/images/btn_menu.svg') no-repeat center / rem(24) auto;
+    @include bg('btn_menu.svg', center, null, null, rem(24), auto);
     height: rem(40);
     width: rem(40);
   }
 
   &-cart {
-    background: url('/images/btn_cart.svg') no-repeat center / rem(24) auto;
+    @include bg('btn_cart.svg', center, null, null, rem(24), auto);
     height: rem(40);
     position: relative;
     width: rem(40);

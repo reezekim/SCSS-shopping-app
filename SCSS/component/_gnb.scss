@@ -21,10 +21,10 @@
 
   @for $i from 1 to 6 {
     .ico#{$i} {
-      background: url('../images/ico_gnb_off_#{$i}.svg') no-repeat center rem(8);
+      @include bg('ico_gnb_off_' + #{$i} + '.svg', center, rem(8));
 
       &:hover {
-        background: url('../images/ico_gnb_on_#{$i}.svg') no-repeat center rem(8);
+        @include bg('ico_gnb_on_' + #{$i} + '.svg', center, rem(8));
 
         a {
           color: $black;
