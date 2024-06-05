@@ -1,80 +1,135 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SCSS shopping app</title>
-  <link rel="stylesheet" href="css/styles.css">
-</head>
-<body>
-  <header class="header">
-    <h1 class="h1">샐러드·과일·채소</h1>
-    <div class="align both">
-      <div><button class="btn-prev" aria-label="이전으로"></button></div>
-      <div>
-        <button class="btn-menu" aria-label="전체메뉴"></button>
-        <button class="btn-cart" aria-label="장바구니"><span>1</span></button>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SCSS shopping app</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="h1">샐러드·과일·채소</h1>
+      <div class="align both">
+        <div><button class="btn-prev" aria-label="이전으로"></button></div>
+        <div>
+          <button class="btn-menu" aria-label="전체메뉴"></button>
+          <button class="btn-cart" aria-label="장바구니"><span>1</span></button>
+        </div>
       </div>
-    </div>
-  </header>
-  <main class="guide-pad">
-    <nav class="guide">
+    </header>
+    <main class="guide-pad">
+      <nav class="guide">
+        <ul>
+          <li><a href="#guide1">탭메뉴</a></li>
+          <li><a href="#guide2">상품리스트</a></li>
+          <li><a href="#guide3">버튼</a></li>
+          <li><a href="#guide4">온라인 서식</a></li>
+          <li><a href="#guide5">콘텐츠 제목</a></li>
+          <li><a href="#guide6">텍스트</a></li>
+        </ul>
+      </nav>
+      <h2 class="h2" id="guide1">탭메뉴</h2>
+      <nav>
+        <ul class="tab-type1">
+          <li class="tab-type1--active"><button>탭1</button></li>
+          <li><button>탭2</button></li>
+        </ul>
+      </nav>
+      <nav>
+        <ul class="tab-type2">
+          <li class="tab-type2--active"><a href="">탭1</a></li>
+          <li><a href="">탭2</a></li>
+          <li><a href="">탭3</a></li>
+          <li><a href="">탭4</a></li>
+          <li><a href="">탭5</a></li>
+          <li><a href="">탭6</a></li>
+          <li><a href="">탭7</a></li>
+          <li><a href="">탭8</a></li>
+          <li><a href="">탭9</a></li>
+        </ul>
+      </nav>
+      <nav>
+        <ul class="tab-type3">
+          <li class="tab-type3--active"><a href="">탭1</a></li>
+          <li><a href="">탭2</a></li>
+          <li><a href="">탭3</a></li>
+          <li><a href="">탭4</a></li>
+        </ul>
+      </nav>
+      <h2 class="h2" id="guide2">상품리스트</h2>
+      <ul class="shop-list">
+        <li>
+          <a href="">
+            <div class="shop-list__thumb">
+              <div class="badge">
+                <span class="hide">상품구매혜택</span>
+                N+1
+              </div>
+              <img
+                src="images/@thumb1.svg"
+                class="shop-list__thumb__large"
+                alt=""
+              />
+              <img
+                src="images/@thumb2.svg"
+                class="shop-list__thumb__small"
+                alt=""
+              />
+            </div>
+          </a>
+          <div class="align both">
+            <div>
+              <div class="badge">배달</div>
+            </div>
+            <div>
+              <button class="btn-like" aria-label="좋아요 즐겨찾기"></button>
+              <button class="btn-cart" aria-label="장바구니 담기"></button>
+            </div>
+          </div>
+          <a href="">
+            <div class="shop-list__title">
+              <span class="hide">제품명</span>
+              신라면 컵라면 + 신라면 봉지라면 (2입)
+            </div>
+            <div class="shop-list__price">
+              <div class="shop-list__price--sale">
+                <span class="hide">할인율</span>50%
+              </div>
+              <div class="shop-list__price--original">
+                <span class="hide">원가</span>1,400원
+              </div>
+              <div class="shop-list__price--sell">
+                <span class="hide">판매가</span>700원
+              </div>
+            </div>
+            <div class="shop-list__hashtag">
+              <span class="hide">상품태그</span>
+              <div class="badge">POP할인</div>
+            </div>
+            <div class="shop-list__rating">
+              <span class="hide">별점</span> 4.6 (00)
+            </div>
+          </a>
+        </li>
+      </ul>
+      <h2 class="h2" id="guide3">버튼</h2>
+      <h2 class="h2" id="guide4">온라인 서식(Form)</h2>
+      <h2 class="h2" id="guide5">콘텐츠 제목</h2>
+      <h1 class="h1">.h1</h1>
+      <h2 class="h2">.h2</h2>
+      <h2 class="h2-2">.h2-2</h2>
+      <h2 class="h2-3">.h2-3</h2>
+      <h3 class="h3">.h3</h3>
+      <h2 class="h2" id="guide6">텍스트</h2>
+    </main>
+    <nav class="gnb">
       <ul>
-        <li><a href="#guide1">탭메뉴</a></li>
-        <li><a href="#guide2">상품리스트</a></li>
-        <li><a href="#guide3">버튼</a></li>
-        <li><a href="#guide4">온라인 서식</a></li>
-        <li><a href="#guide5">콘텐츠 제목</a></li>
-        <li><a href="#guide6">텍스트</a></li>
+        <li class="ico1"><a href="">홈</a></li>
+        <li class="ico2"><a href="">검색</a></li>
+        <li class="ico3"><a href="">결제·적립</a></li>
+        <li class="ico4"><a href="">주문내역</a></li>
+        <li class="ico5"><a href="">MY</a></li>
       </ul>
     </nav>
-    <h2 class="h2" id="guide1">탭메뉴</h2>
-    <nav>
-      <ul class="tab-type1">
-        <li class="tab-type1--active"><button>탭1</button></li>
-        <li><button>탭2</button></li>
-      </ul>
-    </nav>
-    <nav>
-      <ul class="tab-type2">
-        <li class="tab-type2--active"><a href="">탭1</a></li>
-        <li><a href="">탭2</a></li>
-        <li><a href="">탭3</a></li>
-        <li><a href="">탭4</a></li>
-        <li><a href="">탭5</a></li>
-        <li><a href="">탭6</a></li>
-        <li><a href="">탭7</a></li>
-        <li><a href="">탭8</a></li>
-        <li><a href="">탭9</a></li>
-      </ul>
-    </nav>
-    <nav>
-      <ul class="tab-type3">
-        <li class="tab-type3--active"><a href="">탭1</a></li>
-        <li><a href="">탭2</a></li>
-        <li><a href="">탭3</a></li>
-        <li><a href="">탭4</a></li>
-      </ul>
-    </nav>
-    <h2 class="h2" id="guide2">상품리스트</h2>
-    <h2 class="h2" id="guide3">버튼</h2>
-    <h2 class="h2" id="guide4">온라인 서식(Form)</h2>
-    <h2 class="h2" id="guide5">콘텐츠 제목</h2>
-    <h1 class="h1">.h1</h1>
-    <h2 class="h2">.h2</h2>
-    <h2 class="h2-2">.h2-2</h2>
-    <h2 class="h2-3">.h2-3</h2>
-    <h3 class="h3">.h3</h3>
-    <h2 class="h2" id="guide6">텍스트</h2>
-  </main>
-  <nav class="gnb">
-    <ul>
-      <li class="ico1"><a href="">홈</a></li>
-      <li class="ico2"><a href="">검색</a></li>
-      <li class="ico3"><a href="">결제·적립</a></li>
-      <li class="ico4"><a href="">주문내역</a></li>
-      <li class="ico5"><a href="">MY</a></li>
-    </ul>
-  </nav>
-</body>
+  </body>
 </html>
