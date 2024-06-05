@@ -1,0 +1,27 @@
+.shop-list {
+  a {
+    display: block;
+  }
+
+  &__thumb {
+    position: relative;
+
+    .badge {
+      @include position(left, rem(12), top, rem(12));
+    }
+
+    &__large {
+      height: 100%;
+      object-fit: cover;
+      width: 100%;
+    }
+
+    &__small {
+      @include position(right, rem(8), bottom, rem(8));
+      border: 1px solid $greyd6;
+      border-radius: 100%;
+      height: vw(164);
+      width: vw(164);
+    }
+  }
+}
