@@ -4,3 +4,11 @@
 
   @return $sum;
 }
+
+
+// px to vw
+@function vw($px, $base : 375) {
+  // ((100 * 실측값) / 전체해상도값) * 1vw;
+  $sum: (100 * $px) / $base;
+  @return $sum + vw;
+}
