@@ -17,3 +17,18 @@
   background: url(#{$imgurl}#{$imgfile}) no-repeat $x $y $bgcolor;
   background-size: $width $height;
 }
+
+// @each $각각 정의된 변수값 in $정의된변수그룹 {}
+//순서:클래스명,모서리둥근,높이,폰트크기,폰폰색상,선색상,배경색
+@each $class,$br,$pad,$hig,$fs,$color,$bordercolor,$bg in $badgesetting {
+  .#{$class} {
+    background-color: $bg;
+    border: 1px solid $bordercolor;
+    border-radius: rem($br);
+    color: $color;
+    font-size: rem($fs);
+    height: rem($hig);
+    padding: 0 rem($pad);
+  }
+}
+
