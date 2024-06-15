@@ -1,8 +1,8 @@
 // px to rem
 @function rem($px, $base : 10) {
-  $sum:($px / $base) * 1rem;
+  $sum: $px / $base;
 
-  @return $sum;
+  @return $sum + rem;
 }
 
 
