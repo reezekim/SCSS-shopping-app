@@ -18,7 +18,6 @@
   background-size: $width $height;
 }
 
-// @each $각각 정의된 변수값 in $정의된변수그룹 {}
 //순서:클래스명,모서리둥근,높이,폰트크기,폰폰색상,선색상,배경색
 @each $class,$br,$pad,$hig,$fs,$color,$bordercolor,$bg in $badgesetting {
   .#{$class} {
@@ -32,3 +31,14 @@
   }
 }
 
+// IR
+@mixin hide {
+  border: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  width: 1px;
+}
+// 재정의
+.hide { @include hide;}
