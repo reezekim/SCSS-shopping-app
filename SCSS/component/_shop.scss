@@ -9,6 +9,10 @@
     overflow: hidden;
     position: relative;
 
+    .badge {
+      @include position(left, rem(12), top, rem(12));
+    }
+
     &__large {
       height: 100%;
       object-fit: cover;

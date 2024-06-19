@@ -1,0 +1,9 @@
+.badge {
+  align-items: center;
+  display: inline-flex;
+  justify-content: center;
+
+  &.skyblue {
+    width: rem(22);
+  }
+}
