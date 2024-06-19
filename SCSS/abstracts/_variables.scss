@@ -28,4 +28,9 @@ $badgesetting:
   'white' 20 8 20 11 $grey1e $greyd6 $white,
   'grey' 4 3 18 11 $grey1e $greye5 $greye5;
 
+// Button 정의
+// 순서:클래스명,모서리둥근,좌우여백,높이,폰트크기,폰트색상,선색상,배경색
+$buttonsetting:
+'black' 47 19 47 15 $white $grey1e $grey1e,
+'white' 47 19 47 15 $grey1e $greyd6 $white;
 

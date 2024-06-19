@@ -1,4 +1,8 @@
 .btn {
+  align-items: center;
+  display: inline-flex;
+  justify-content: center;
+
   &-prev {
     @include bg('btn_prev.svg', center, null, null, rem(24), auto);
     height: rem(40);
