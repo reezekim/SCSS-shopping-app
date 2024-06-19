@@ -4,20 +4,28 @@ $black:#000;
 $white:#fff;
 $red: #ff3d45;
 $purple: #bb6bd9;
+$skyblue: #56ccf2;
 $grey06: #060606;
 $grey1e: #1e2530;
 $grey55: #555d67;
 $grey83: #838a93;
+$greya5: #a5acb8;
 $greyd6: #d6d9e1;
 $greye5: #e5e8f0;
+$greyf4: #f4f5fb;
 $greyf6: #f6f6f6;
 
 // 이미지 경로
 $imgurl:'../images/';
 
-// Badge
-// 순서:클래스명,좌우여백,모서리둥근,높이,폰트크기,폰트색상,선색상,배경색
+// Badge 정의
+// 순서:클래스명,모서리둥근,좌우여백,높이,폰트크기,폰트색상,선색상,배경색
 $badgesetting:
   'black' 4 3 20 13 $white $grey1e $grey1e,
+  'black2' 20 8 20 13 $white $grey1e $grey1e,
   'purple' 20 8 20 13 $white $purple $purple,
+  'skyblue' 3 0 20 13 $white $skyblue $skyblue,
+  'white' 20 8 20 11 $grey1e $greyd6 $white,
   'grey' 4 3 18 11 $grey1e $greye5 $greye5;
+
+

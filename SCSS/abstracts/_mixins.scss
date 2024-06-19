@@ -18,6 +18,7 @@
   background-size: $width $height;
 }
 
+// Badge
 //순서:클래스명,모서리둥근,높이,폰트크기,폰폰색상,선색상,배경색
 @each $class,$br,$pad,$hig,$fs,$color,$bordercolor,$bg in $badgesetting {
   .#{$class} {
