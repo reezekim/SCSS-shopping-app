@@ -25,6 +25,16 @@
       border-radius: 100%;
       height: vw(56);
       width: vw(56);
+
+      .list & {
+        height: vw(48);
+        width: vw(48);
+      }
+
+      .card & {
+        height: vw(96);
+        width: vw(96);
+      }
     }
   }
 
@@ -76,5 +86,28 @@
   &__info {
     display: grid;
     gap: rem(3);
+  }
+
+  &__funcbtn {
+    display: flex;
+    gap: rem(12);
+  }
+
+  &.list {
+    grid-template-columns: 1fr;
+
+    > li {
+      display: grid;
+      gap: 0 rem(16);
+      grid-template-columns: vw(100) 1fr;
+    }
+
+    a:first-child {
+      grid-row: 1 / 3;
+    }
+  }
+
+  &.card {
+    grid-template-columns: 1fr;
   }
 }
