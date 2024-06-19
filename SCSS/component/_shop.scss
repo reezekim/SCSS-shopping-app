@@ -1,14 +1,13 @@
 .shop-list {
-  a {
-    display: block;
-  }
+  display: grid;
+  gap: rem(15);
+  grid-template-columns: repeat(2, 1fr);
 
   &__thumb {
+    background-color: $greyf6;
+    border-radius: rem(12);
+    overflow: hidden;
     position: relative;
-
-    .badge {
-      @include position(left, rem(12), top, rem(12));
-    }
 
     &__large {
       height: 100%;
@@ -20,8 +19,58 @@
       @include position(right, rem(8), bottom, rem(8));
       border: 1px solid $greyd6;
       border-radius: 100%;
-      height: vw(164);
-      width: vw(164);
+      height: vw(56);
+      width: vw(56);
     }
+  }
+
+  &__title {
+    color: $grey1e;
+    font-size: rem(13);
+    font-weight: 500;
+    line-height: rem(18);
+  }
+
+  &__price {
+    display: grid;
+    gap: rem(2) rem(4);
+    grid-template-columns: minmax(rem(40), auto) minmax(rem(40), 1fr);
+
+    &--sale {
+      color: $red;
+      font-size: rem(13);
+      font-weight: 700;
+      grid-column: 1 / -1;
+      line-height: rem(18);
+    }
+
+    &--original {
+      color: $grey83;
+      font-size: rem(11);
+      font-weight: 500;
+      line-height: rem(16);
+      text-decoration-line: line-through;
+    }
+
+    &--sell {
+      color: $grey1e;
+      font-size: rem(13);
+      font-weight: 700;
+      line-height: rem(18);
+    }
+  }
+
+  &__rating {
+    @include bg('ico_rate.svg', left);
+    color: $grey1e;
+    font-size: rem(11);
+    font-weight: 500;
+    line-height: rem(16);
+    padding-left: rem(18);
+  }
+
+  &__info {
+    display: grid;
+    gap: rem(3);
   }
 }
