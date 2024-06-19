@@ -2,18 +2,9 @@
 // 스타일 가이드 페이지
 .guide {
   background-color: $white;
-  left: 0;
-  position: fixed;
-  right: 0;
-  top: rem(48);
-  z-index: 100;
-
-  &-pad {
-    padding-top: rem(63);
-  }
+  border-top: 1px solid $grey06;
 
   ul {
-    border-top: 1px solid $grey06;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
   }
