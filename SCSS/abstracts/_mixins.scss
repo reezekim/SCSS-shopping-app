@@ -57,3 +57,11 @@
 }
 // 재정의
 .hide { @include hide;}
+
+// 빈콘텐츠 아이콘
+@mixin empty($width, $height, $img) {
+  margin: 0 auto;
+  width: rem($width);
+  height: rem($height);
+  @include bg(#{$img} + '.svg', center);
+}
