@@ -1,5 +1,11 @@
 .gnb {
+  background-color: $white;
+  bottom: 0;
   box-shadow: 0 rem(-4) rem(4) rgba($grey06, .04);
+  left: 0;
+  position: fixed;
+  right: 0;
+  z-index: 1000;
 
   ul {
     display: flex;
