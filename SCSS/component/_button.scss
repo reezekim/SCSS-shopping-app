@@ -44,4 +44,16 @@
     height: rem(20);
     width: rem(20);
   }
+
+  &-close {
+    @include bg('btn_close.svg', center, null, null, rem(24), auto);
+    height: rem(40);
+    width: rem(40);
+  }
+
+  &-home {
+    @include bg('btn_home.svg', center, null, null, rem(24), auto);
+    height: rem(40);
+    width: rem(40);
+  }
 }
