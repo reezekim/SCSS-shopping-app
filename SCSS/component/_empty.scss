@@ -1,0 +1,26 @@
+.empty-content {
+  display: flex;
+  flex-direction: column;
+
+  &.height-type1 {
+    height: calc(100vh - rem(285));
+    justify-content: center;
+    text-align: center;
+  }
+
+  &__text {
+    p {
+      color: $grey55;
+      font-size: rem(18);
+      line-height: rem(29);
+    }
+
+    b {
+      color: $greya5;
+      display: block;
+      font-size: rem(15);
+      line-height: rem(23);
+      padding: rem(4) 0 0;
+    }
+  }
+}
