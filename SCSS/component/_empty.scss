@@ -8,6 +8,16 @@
     text-align: center;
   }
 
+  &__img {
+    &1 {
+      @include empty(80, 90, ico_empty1);
+    }
+
+    &2 {
+      @include empty(99, 96, ico_empty2);
+    }
+  }
+
   &__text {
     p {
       color: $grey55;
