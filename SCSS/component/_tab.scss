@@ -32,10 +32,13 @@
   }
 
   &-type2 {
-    display: flex;
-    flex-wrap: nowrap;
     overflow-x: auto;
     padding: rem(8) 0 rem(8) rem(16);
+    white-space: nowrap;
+
+    >li {
+      display: inline-block;
+    }
 
     a,
     button {
