@@ -9,3 +9,9 @@
 .m {
   &16 {margin: 0 rem(16);}
 }
+
+.hr-line {
+  background-color: rgba($greyf1, .5);
+  border: 0;
+  height: rem(12);
+}
