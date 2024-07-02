@@ -3,7 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>SCSS shopping app</title>
+    <title>스타일 가이드</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="js/global.js"></script>
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
@@ -27,6 +29,8 @@
           <li><a href="#guide4">온라인 서식</a></li>
           <li><a href="#guide5">콘텐츠 제목</a></li>
           <li><a href="#guide6">텍스트</a></li>
+          <li><a href="#guide7">토글 콘텐츠</a></li>
+          <li><a href="#guide8">구분선 UI</a></li>
         </ul>
       </nav>
 
@@ -442,8 +446,20 @@
       <h2 class="h2-2">.h2-2</h2>
       <h2 class="h2-3">.h2-3</h2>
       <h3 class="h3">.h3</h3>
+
       <h2 class="h2 mt100" id="guide6">텍스트</h2>
+
+      <h2 class="h2 mt100" id="guide7">토글 콘텐츠</h2>
+      <div class="toggle-box">
+        <button class="toggle-box__btn active">제목</button>
+        <div class="toggle-box__content">토글 콘텐츠 내용 8/16</div>
+      </div>
+      
+      <h2 class="h2 mt100" id="guide8">구분선 UI</h2>
+      <hr class="hr-line">
+
     </main>
+
     <nav class="gnb">
       <ul>
         <li class="ico1"><a href="">홈</a></li>
