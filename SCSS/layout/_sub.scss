@@ -17,7 +17,7 @@
   }
 
   &__title {
-    @include ellipsis;
+        @include ellipsis;
     color: $grey1e;
     font-size: rem(15);
     line-height: rem(23);
@@ -42,5 +42,57 @@
     font-size: rem(13);
     font-weight: 700;
     line-height: rem(18);
+  }
+}
+
+// 주소록
+.address-list {
+  li {
+    display: grid;
+    gap: rem(2);
+    padding: rem(16) 0;
+
+    + li {
+      border-top: 1px solid $greye5;
+    }
+
+    &:first-child {
+      padding-top: 0;
+    }
+  }
+
+  &__title {
+    color: $grey1e;
+    font-size: rem(15);
+    font-weight: 700;
+    line-height: rem(23);
+    padding-bottom: rem(6);
+  }
+
+  &__address {
+    color: $grey55;
+    font-size: rem(15);
+    line-height: rem(23);
+  }
+
+  &__name {
+    color: $grey55;
+    font-size: rem(15);
+    font-weight: 300;
+    line-height: rem(23);
+  }
+
+  &__tel {
+    color: $grey55;
+    font-size: rem(15);
+    font-weight: 300;
+    line-height: rem(23);
+  }
+
+  &__message {
+    color: $grey55;
+    font-size: rem(15);
+    font-weight: 300;
+    line-height: rem(23);
   }
 }
