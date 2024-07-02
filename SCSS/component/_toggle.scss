@@ -1,0 +1,33 @@
+.toggle-box {
+  &__btn {
+    background-color: $white;
+    color: $grey1e;
+    font-size: rem(18);
+    height: rem(55);
+    line-height: rem(29);
+    position: relative;
+    text-align: left;
+    text-indent: rem(16);
+    width: 100%;
+
+    &::after {
+      @include position(right, rem(16), top, 50%);
+      @include bg('ico_toggle.svg', center);
+      content: '';
+      height: rem(20);
+      transform: translateY(-50%) rotate(180deg);
+      transition: .3s;
+      width: rem(20);
+    }
+
+    &.active {
+      &::after {
+        transform: translateY(-50%) rotate(0deg);
+      }
+    }
+  }
+
+  &__content {
+    padding: rem(8) rem(16);
+  }
+}
