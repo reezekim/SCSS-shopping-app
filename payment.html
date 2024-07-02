@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>결제 페이지</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="js/global.js"></script>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <h1 class="h1">결제</h1>
+      <div class="align both vm">
+        <div><button class="btn-prev" aria-label="이전으로"></button></div>
+        <div></div>
+      </div>
+    </header>
+
+    <main>
+      <div class="toggle-box">
+        <button class="toggle-box__btn active">택배상품 정보</button>
+        <div class="toggle-box__content">
+          <a href="" class="parcel-info">
+            <div class="parcel-info__thumb">
+              <img src="images/ico_package.svg" alt="" />
+            </div>
+            <div class="parcel-info__company">
+              <img src="images/ico_package_shop1.svg" alt="GS25편의점택배" />
+            </div>
+            <div class="parcel-info__title">
+              <span class="hide">택배물품명</span>
+              물품정보(물품명/물품가격) 최대 1줄 노출..
+            </div>
+            <div class="parcel-info__pare-info">
+              <span class="hide">운임정보</span>
+              기본운임
+            </div>
+            <div class="parcel-info__premium">
+              <span class="hide">할증요금</span>
+              고액할증(+2,000원)
+            </div>
+            <div class="parcel-info__pay">
+              <span class="hide">운임요금</span>
+              4,500원
+            </div>
+          </a>
+        </div>
+      </div>
+      <hr class="hr-line" />
+
+      <div class="toggle-box">
+        <button class="toggle-box__btn active">배송 정보</button>
+        <div class="toggle-box__content">
+          <ul class="address-list">
+            <li>
+              <strong class="address-list__title">보내는 분</strong>
+              <div class="address-list__address">
+                서울 용산구 한강대로 15 (한강로2가, 용산 더 센트럴) C동 1021호
+              </div>
+              <div class="address-list__name">유리</div>
+              <div class="address-list__tel">010-9876-5432</div>
+            </li>
+            <li>
+              <strong class="address-list__title">받는 분</strong>
+              <div class="address-list__address">
+                서울 강남구 봉은사로 23 (역삼동 654-1) 상세주소
+              </div>
+              <div class="address-list__name">윤태오</div>
+              <div class="address-list__tel">010-1234-5678</div>
+              <div class="address-list__message">파손에 주의해주세요.</div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <hr class="hr-line" />
+
+      <div class="toggle-box">
+        <button class="toggle-box__btn active">할인·포인트</button>
+        <div class="toggle-box__content">
+          <div class="benefits-box line">
+            <div class="align both">
+              <div class="benefits-box__info">할인쿠폰 <b>3개</b></div>
+              <div><a href="" class="btn-arrow">변경하기</a></div>
+            </div>
+            <div class="benefits-box__input-type1">
+              <input type="text" value="5,000 원" readonly />
+            </div>
+          </div>
+          <div class="benefits-box">
+            <div class="benefits-box__info">POINT <b>4,947P</b></div>
+            <div class="benefits-box__input-type2">
+              <input type="text" value="0 P" />
+              <button class="btn black">전액사용</button>
+            </div>
+          </div>
+          <div class="benefits-box">
+            <div class="benefits-box__info">리워즈 <b>24,400점</b></div>
+            <div class="benefits-box__input-type2">
+              <input type="text" value="0 점" />
+              <button class="btn black">전액사용</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="bottom-fix">
+        <button class="btn black">56,855원 결제하기</button>
+      </div>
+    </main>
+  </body>
+</html>
