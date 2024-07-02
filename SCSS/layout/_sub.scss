@@ -96,3 +96,40 @@
     line-height: rem(23);
   }
 }
+
+// 혜택
+.benefits-box {
+  display: grid;
+  gap: rem(6);
+  ~ .benefits-box {margin-top: rem(16);}
+  &.line {
+    border-bottom: 1px solid $greye5;
+    padding-bottom: rem(16);
+  }
+
+  input {
+    box-sizing: border-box;
+    width: 100%;
+  }
+
+  &__info {
+    color: $grey55;
+    display: flex;
+    font-size: rem(13);
+    gap: rem(8);
+    line-height: rem(18);
+
+    b {
+      color: $green;
+      font-size: rem(13);
+      font-weight: 500;
+      line-height: rem(18);
+    }
+  }
+
+  &__input-type2 {
+    display: grid;
+    gap: rem(8);
+    grid-template-columns: 1fr rem(100);
+  }
+}
