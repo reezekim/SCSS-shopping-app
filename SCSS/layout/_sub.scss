@@ -1,0 +1,45 @@
+// 택배 상품 정보
+.parcel-info {
+  display: grid;
+  gap: rem(3) rem(16);
+  grid-template-columns: vw(64) 1fr;
+  grid-template-rows: repeat(4, minmax(rem(10), auto));
+
+  &__thumb {
+    align-self: start;
+    grid-row: 1 / 6;
+
+    img {
+      height: 100%;
+      object-fit: cover;
+      width: 100%;
+    }
+  }
+
+  &__title {
+    color: $grey1e;
+    font-size: rem(15);
+    line-height: rem(23);
+  }
+
+  &__pare-info {
+    color: $grey83;
+    font-size: rem(13);
+    font-weight: 500;
+    line-height: rem(18);
+  }
+
+  &__premium {
+    color: $grey83;
+    font-size: rem(13);
+    font-weight: 500;
+    line-height: rem(18);
+  }
+
+  &__pay {
+    color: $grey1e;
+    font-size: rem(13);
+    font-weight: 700;
+    line-height: rem(18);
+  }
+}
