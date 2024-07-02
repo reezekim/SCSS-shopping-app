@@ -65,3 +65,11 @@
   height: rem($height);
   @include bg(#{$img} + '.svg', center);
 }
+
+// 한줄말줄임표
+@mixin ellipsis {
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

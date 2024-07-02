@@ -17,6 +17,7 @@
   }
 
   &__title {
+    @include ellipsis;
     color: $grey1e;
     font-size: rem(15);
     line-height: rem(23);
