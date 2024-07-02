@@ -1,11 +1,14 @@
 $(function(){
   const $gnb = $('.gnb');
+  const $btmfix = $('.bottom-fix');
   const $gnbHeight = $gnb.height();
+  const $btmfixHeight = $btmfix.height();
   const $toggleBtn = $('.toggle-box__btn');
-  const $toggleContent = $('.toggle-box__content');
+  const $toggleContent = $('.toggle-box__content'); // ???
 
   function init(){
     mobileGnb();
+    bottomFix();
     setting();
     bindEvent();
   }
@@ -22,12 +25,18 @@ $(function(){
 
   function mobileGnb() {
     if($gnb){
-      bodyCSS();
+      bodyCSS($gnbHeight);
     }
   }
 
-  function bodyCSS() {
-    $('body').css('padding-bottom', $gnbHeight + 20);
+  function bottomFix() {
+    if($btmfix){
+      bodyCSS($btmfixHeight);
+    }
+  }
+
+  function bodyCSS($value) {
+    $('body').css('padding-bottom', $value + 20);
   }
 
   // 토글 콘텐츠
