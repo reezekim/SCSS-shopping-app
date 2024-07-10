@@ -133,3 +133,20 @@
     grid-template-columns: 1fr rem(100);
   }
 }
+
+// 동의
+.agree-box {
+  padding: rem(20) rem(16);
+
+  ul {
+    display: grid;
+    gap: rem(16);
+  }
+
+  li {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+  }
+
+}
