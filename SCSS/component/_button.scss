@@ -66,4 +66,11 @@
     line-height: rem(18);
     padding: 0 rem(17) 0 0;
   }
+
+  &-agree {
+    @include bg('ico_arrow_right.svg', center);
+    display: block;
+    height: rem(24);
+    width: rem(24);
+  }
 }
